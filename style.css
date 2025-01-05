@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#2c3e50, #3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.game-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-size: 50px;
+}
+
+.game-text > button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #3498db;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.score {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.playground > ul {
+    border: 1px solid #333;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.playground > ul > li {
+    width: 100%;
+    height: 25px;
+}
+
+.playground > ul > li > ul {
+    display: flex;
+}
+
+.playground > ul > li > ul > li {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid #ccc;
+}
+
+.tree {
+    background: #67c23a;
+}
+
+.bar {
+    background: pink;
+}
+
+.zee {
+    background: #e6a23c;
+}
+
+.elLeft {
+    background: #8e44ad;
+}
+
+.elRight {
+    background: #16a085;
+}
+
+.square {
+    background: #2c3e50;
+}
+
+.control-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.control-buttons button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.control-buttons button:active {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.center-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#drop-btn {
+    width: 80px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .control-buttons {
+        display: none;
+    }
+}
